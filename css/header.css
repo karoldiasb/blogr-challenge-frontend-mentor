@@ -16,7 +16,7 @@ header .container {
     grid-template-columns: 0.1fr 1fr 0.1fr; 
     gap: 1rem;
     margin: 0 auto; 
-    width: 80em;
+    width: 80%;
 }
 
 header .container .container-menu{
@@ -34,6 +34,7 @@ header .container .icon-menu a.icon{
 
 header nav .menu-product-company-connect li, nav .menu-login-signup li {
     display: inline-block;
+    padding-left: 20px;
 }
 
 header nav .menu-product-company-connect li a, nav .menu-login-signup li a{
@@ -133,17 +134,23 @@ header .containerMain footer .footerButton button:first-child{
         top: 60px;
         width: 80%;
         height: 50%;
-        background-color: var(--white);
+        /* background-color: var(--white); */
         margin-top: 10px;
         border-radius: 5px;
         box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.24);
     }
 
-    header nav .menu-product-company-connect li, nav .menu-login-signup li {
-        display: block;
-    }
-
     header .container .icon-menu{
         display: inline;
+    }
+
+    header nav .menu-product-company-connect li, nav .menu-login-signup li {
+        display: block;
+        text-align: center;
+        padding: 10px;
+    }
+
+    header nav .menu-product-company-connect li a, nav .menu-login-signup li a{
+        color: var(--very-dark-black-blue);
     }
 }

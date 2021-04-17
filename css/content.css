@@ -1,8 +1,7 @@
 .container-content{
     display: flex;
     flex-direction: column;
-    margin-top: 100px;
-    gap: 4rem;
+    gap: 3rem;
 }
 
 .container-content article{
@@ -10,49 +9,67 @@
     margin: auto; 
 }
 
- .container-content article:first-child{
-    background-image: url("../images/illustration-editor-desktop.svg");
-    background-repeat: no-repeat;
-    background-position: 120% 0%;
-    background-size: 650px;   
-    /* width: 80em; */
-    /* height: 60em; */
-}
-
-.container-content article:first-child .content-article{
+.container-content .img-illustrator-editor{
+    overflow: hidden;
     height: 100vh;
+    width: 100%;
+}
+.container-content .img-illustrator-editor > img{
+    max-width: 100%;
+    height: 600px;
+    position: relative;
+    left: 9vw;
+    top: 5vw;
 }
 
 .container-content article .content-article{
-    display: flex;
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 3rem;
     text-align: initial;
 }
 
+.container-content .content-article .designed-for-the-future h1{
+    text-align: end;
+    font-size: 2rem;
+}
+
 .container-content article .content-article section{
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 3rem;
 }
 
 .container-content article .content-article div p{
-    margin-top: 20px;
+    margin-top: 2vw;
 }
 
-.container-content article .content-article div{
-    width: 45%;
-    margin: 0 120px; 
+.container-content .content-article section:first-child{
+    display: flex;
+    align-self: center;
 }
 
-.container-content article .content-article .content-article h1{
-    text-align: center;
+.container-content article:nth-child(2) .content-article section:first-child div{ 
+    margin: 0 80px; 
+}
+
+.container-content article:nth-child(2) .content-article section p,
+.container-content article:nth-child(3) .content-article section div p{
+    width: 70%;
+}
+
+.container-content article:first-child .content-article section:first-child div{
+    width: 80%;
+    align-self: flex-end;
 }
 
 .container-content article .content-article section{
     display: flex;
     flex-direction: column;
 }
-
 
 .container-content article:nth-child(2){
     border-radius: 0px 70px 0px 0px;
@@ -63,10 +80,6 @@
     background-position: left bottom;
 }
 
-.container-content article:nth-child(2) .content-article{
-    height: 50vh;
-}
-
 .container-content article:nth-child(2) section{
     display: flex;
     align-self: center;
@@ -74,29 +87,35 @@
     padding-right: 40px;
 }
 
-.illustration-phones{
+.container-content .illustration-phones{
+    width: 100%;
+}
+.container-content .illustration-phones > img{
+    max-width: 100%;
     position: relative;
-    top: 20px;
-} 
-
-.illustration-phones img{
     height: 450px;
+    top: -40px;
 }
 
 .container-content article:nth-child(3) .content-article{
     height: 90vh;
 }
 
-.container-content article:nth-child(3) {
-    background-image: url("../images/illustration-laptop-desktop.svg");
-    background-repeat: no-repeat;
-    background-size: 650px;   
-    background-position: -30% 8%;
+.container-content .img-illustrator-laptop-desktop{
+    /* height: 50vh; */
+    width: 100%;
+}
+.container-content .img-illustrator-laptop-desktop > img{
+    max-width: 100%;
+    position: relative;
+    height: 500px;
+    left: -5vw;
 }
 
 .container-content article:nth-child(3) section{
     display: flex;
     align-self: center;
+    /* padding-right: 30px; */
 }
 
 .container-content article:nth-child(3) section div{
@@ -114,8 +133,10 @@
     width: 80%;
     margin: 0 auto; 
     width: 80%;
-    display: flex;
-    gap: 10rem;
+    /* display: flex;
+    gap: 5rem; */
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     color: var(--white);
 }
 
@@ -133,12 +154,103 @@
     padding-top: 15px;
 } 
 
+.attribution{
+    text-align: center;
+    background-color: var(--very-light-red);
+    color: var(--white);
+}
+
+.attribution a{
+    text-decoration: none;
+    color: var(--very-dark-black-blue);
+    font-weight: bold;
+}
+
 
 @media only screen and (max-width: 540px) {
-    /* .container-content{
-        flex-direction: row;
-    } */
+    .container-content article:first-child .content-article{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .container-content .img-illustrator-editor {
+        height: 55vh;
+    }
+    .container-content .img-illustrator-editor > img {
+        position: static;
+        height: 350px;
+        width: 350px;
+    }
+    .container-content .content-article .designed-for-the-future h1 {
+        text-align: center; 
+        font-size: 1.2rem;
+    }
+    .container-content article:first-child .content-article section:first-child div {
+        margin: 0px;
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 100%;
+    }
+    .container-content article .content-article {
+        display: flex;
+        flex-direction: column;
+    }
+    .container-content article .content-article section{
+        text-align: center;
+    }
+    .container-content article:nth-child(2) section {
+        padding-right: 0px;
+    }
+    .container-content article:nth-child(2) .content-article section p,
+        .container-content article:nth-child(3) .content-article section div p {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+
+    }
+    .container-content article .content-article {
+        gap: 0rem;
+    }
+    .container-content article:nth-child(2) .content-article {
+        height: 100%;
+    }
+    .container-content article:nth-child(2) .content-article section:first-child div {
+        margin: 0;
+    }
+    .container-content article:nth-child(3) .content-article {
+        height: 100%;
+    }
+    .container-content .illustration-phones > img {
+        position: relative;
+        height: 350px;
+        width: 350px;
+    }
+    .container-content .img-illustrator-laptop-desktop > img {
+        position: relative;
+        height: 350px;
+        width: 350px;
+    }
+    .container-content .img-illustrator-laptop-desktop > img {
+        left: 0px;
+    }
+    .container-content footer {
+        height: 100%;
+    }
+    .container-content .container-footer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+
+    
 }
+
+
 
 
 
