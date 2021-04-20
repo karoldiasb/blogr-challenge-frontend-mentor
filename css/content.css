@@ -1,7 +1,7 @@
 .container-content{
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 5rem;
 }
 
 .container-content article{
@@ -9,64 +9,79 @@
     margin: auto; 
 }
 
-.container-content .img-illustrator-editor{
-    overflow: hidden;
-    height: 100vh;
-    width: 100%;
-}
-.container-content .img-illustrator-editor > img{
-    max-width: 100%;
-    height: 600px;
-    position: relative;
-    left: 9vw;
-    top: 5vw;
-}
-
-.container-content article .content-article{
-    /* display: flex; */
+.container-content article {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
     text-align: initial;
 }
 
-.container-content .content-article .designed-for-the-future h1{
+.container-content  .designed-for-the-future h1{
     text-align: end;
     font-size: 2rem;
 }
 
-.container-content article .content-article section{
-    /* display: flex;
-    flex-direction: column; */
+.container-content article  section{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
 }
 
-.container-content article .content-article div p{
+.container-content .img-illustrator-editor{
+    /* height: 60vh; */
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    margin-top: 4vw;
+
+}
+
+.container-content .img-illustrator-editor > img{
+    position: relative;
+    max-width: 100%;
+    max-height: 700px;
+    width: auto;
+    height: auto;
+    left: 9vw;
+    /* top: 2vw; */
+}
+
+.container-content article  div p{
     margin-top: 2vw;
 }
 
-.container-content .content-article section:first-child{
+.container-content  section:first-child{
     display: flex;
     align-self: center;
 }
 
-.container-content article:nth-child(2) .content-article section:first-child div{ 
+.container-content article:nth-child(2)  {
+    grid-template-rows: 300px;
+}
+
+.container-content article:nth-child(2)  section:first-child div{ 
     margin: 0 80px; 
 }
 
-.container-content article:nth-child(2) .content-article section p,
-.container-content article:nth-child(3) .content-article section div p{
+.container-content article:nth-child(2)  section p,
+.container-content article:nth-child(3)  section div p{
     width: 70%;
 }
 
-.container-content article:first-child .content-article section:first-child div{
+.container-content article:first-child section{
+    display: flex;
+    align-self: center;
+}
+
+.container-content article:first-child  section:first-child div{
     width: 80%;
     align-self: flex-end;
 }
 
-.container-content article .content-article section{
+.container-content article  section{
     display: flex;
     flex-direction: column;
 }
@@ -84,32 +99,34 @@
     display: flex;
     align-self: center;
     color: var(--white);
-    padding-right: 40px;
+    padding: 20px;
 }
 
 .container-content .illustration-phones{
     width: 100%;
 }
 .container-content .illustration-phones > img{
-    max-width: 100%;
     position: relative;
-    height: 450px;
-    top: -40px;
-}
-
-.container-content article:nth-child(3) .content-article{
-    height: 90vh;
+    max-width: 100%;
+    max-height: 450px;
+    width: auto;
+    height: auto;
 }
 
 .container-content .img-illustrator-laptop-desktop{
-    /* height: 50vh; */
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .container-content .img-illustrator-laptop-desktop > img{
-    max-width: 100%;
     position: relative;
-    height: 500px;
-    left: -5vw;
+    max-width: 100%;
+    max-height: 700px;
+    width: auto;
+    height: auto;
+    left: -14vw;
+
 }
 
 .container-content article:nth-child(3) section{
@@ -168,68 +185,59 @@
 
 
 @media only screen and (max-width: 540px) {
-    .container-content article:first-child .content-article{
+    .container-content article:first-child {
         display: flex;
         flex-direction: column-reverse;
     }
-    .container-content .img-illustrator-editor {
+    /* .container-content .img-illustrator-editor{
+        height: 65vh;
+    } */
+    /* .container-content .img-illustrator-laptop-desktop{
         height: 55vh;
-    }
+    } */
     .container-content .img-illustrator-editor > img {
-        position: static;
-        height: 350px;
-        width: 350px;
+        left: 0;
     }
-    .container-content .content-article .designed-for-the-future h1 {
+    .container-content  .designed-for-the-future h1 {
         text-align: center; 
         font-size: 1.2rem;
     }
-    .container-content article:first-child .content-article section:first-child div {
+    .container-content article:first-child  section:first-child div {
         margin: 0px;
         text-align: center;
         padding-left: 20px;
         padding-right: 20px;
         width: 100%;
     }
-    .container-content article .content-article {
+    .container-content article  {
         display: flex;
         flex-direction: column;
     }
-    .container-content article .content-article section{
+    .container-content article  section{
         text-align: center;
     }
     .container-content article:nth-child(2) section {
         padding-right: 0px;
     }
-    .container-content article:nth-child(2) .content-article section p,
-        .container-content article:nth-child(3) .content-article section div p {
+    .container-content article:nth-child(2)  section p,
+        .container-content article:nth-child(3)  section div p {
         width: 100%;
         padding-left: 20px;
         padding-right: 20px;
         padding-bottom: 20px;
 
     }
-    .container-content article .content-article {
+    /* .container-content article  {
         gap: 0rem;
-    }
-    .container-content article:nth-child(2) .content-article {
+    } */
+    .container-content article:nth-child(2)  {
         height: 100%;
     }
-    .container-content article:nth-child(2) .content-article section:first-child div {
+    .container-content article:nth-child(2)  section:first-child div {
         margin: 0;
     }
-    .container-content article:nth-child(3) .content-article {
+    .container-content article:nth-child(3)  {
         height: 100%;
-    }
-    .container-content .illustration-phones > img {
-        position: relative;
-        height: 350px;
-        width: 350px;
-    }
-    .container-content .img-illustrator-laptop-desktop > img {
-        position: relative;
-        height: 350px;
-        width: 350px;
     }
     .container-content .img-illustrator-laptop-desktop > img {
         left: 0px;
