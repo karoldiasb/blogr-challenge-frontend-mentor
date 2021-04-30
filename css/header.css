@@ -85,7 +85,7 @@ header .container-submenu .submenu {
 
 header .menu-product-company-connect li:hover > .container-submenu .submenu {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
 }
 
 header .menu-product-company-connect li:hover > .container-submenu .submenu li  {
@@ -111,7 +111,7 @@ header .container .icon-menu{
     display: none;
 }
 
-header .containerMain{
+header .container-main{
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -121,12 +121,12 @@ header .containerMain{
     margin-top: 60px;
 }
 
-header .containerMain footer .footerButton{
+header .container-main footer .footer-button{
     display: flex;
     gap: 0.5rem;
 }
 
-header .containerMain footer .footerButton button{
+header .container-main footer .footer-button button{
     padding: 10px;
     border-radius: 20px;
     background-color: transparent;
@@ -138,17 +138,17 @@ header .containerMain footer .footerButton button{
     gap: 2rem;
 }
 
-header .containerMain footer .footerButton button:first-child{
+header .container-main footer .footer-button button:first-child{
     background-color: var(--white);
     color: var(--very-light-red);
 }
 
-header .containerMain footer .footerButton button:hover{
+header .container-main footer .footer-button button:hover{
     background-color: var(--white);
     color: var(--very-light-red);
 }
 
-header .containerMain footer .footerButton button:first-child:hover, header nav .menu-login-signup li:last-child:hover{
+header .container-main footer .footer-button button:first-child:hover, header nav .menu-login-signup li:last-child:hover{
     background-color: var(--very-light-red);
     color: var(--white);
     border: none;
@@ -190,6 +190,12 @@ hr{
 
     header .container .icon-menu{
         display: inline;
+        width: 20px;
+        height: 20px;
+    }
+
+    header .container .icon-menu a img{
+        max-width: 100%;
     }
 
     header .container-submenu{

@@ -28,8 +28,8 @@
       <div class="container-menu" id="menu"> 
         <nav>
           <ul class="menu-product-company-connect">
-            <li><a href="#"> Product <img src="images/icon-arrow-light.svg" alt="logo"></a>
-              <div class="container-submenu">
+            <li><a href="javascript:void(0);"> Product <img src="images/icon-arrow-light.svg" alt="arrow" onclick="expandSubmenu('submenu1')"></a>
+              <div class="container-submenu" id="submenu1">
                 <ul class="submenu">
                   <li><a href="#"> Overview </a></li>
                   <li><a href="#"> Pricing </a></li>
@@ -40,8 +40,8 @@
               </div>
               
             </li>
-            <li><a href="#"> Company <img src="images/icon-arrow-light.svg" alt="logo"></a>
-              <div class="container-submenu">
+            <li><a href="javascript:void(0);"> Company <img src="images/icon-arrow-light.svg" alt="arrow" onclick="expandSubmenu('submenu2')"></a>
+              <div class="container-submenu" id="submenu2">
                 <ul class="submenu">
                   <li><a href="#"> About </a></li>
                   <li><a href="#"> Team </a></li>
@@ -50,8 +50,8 @@
                 </ul>
               </div>
             </li>
-            <li><a href="#"> Connect <img src="images/icon-arrow-light.svg" alt="logo"></a>
-              <div class="container-submenu">
+            <li><a href="javascript:void(0);"> Connect <img src="images/icon-arrow-light.svg" alt="arrow" onclick="expandSubmenu('submenu3')"></a>
+              <div class="container-submenu" id="submenu3"> 
                 <ul class="submenu">
                   <li><a href="#"> Contact </a></li>
                   <li><a href="#"> Newsletter </a></li>
@@ -70,21 +70,21 @@
         </nav>
       </div>
 
-      <div class="icon-menu">
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
+      <div class="icon-menu" id="menuMobile">
+        <a href="javascript:void(0);" class="icon" onclick="expandMenuMobile()">
+          <img src="images/icon-hamburger.svg" alt="logo">
         </a>
       </div>
       
     </div>
 
-    <div class="containerMain">
+    <div class="container-main">
       <main>
         <h1> A modern publishing platform </h1>
         <p> Grow your audience and build your online brand </p>
       </main>
       <footer>
-        <div class="footerButton">
+        <div class="footer-button">
           <button type="button">Start for Free</button>
           <button type="button">Learn More</button>
         </div>
@@ -219,13 +219,30 @@
 </body>
 
 <script>
-  function myFunction() {
-    var x = document.getElementById("menu");
-    if (x.style.display === "flex") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "flex";
-      x.style.flexDirection = "column";
+  function expandSubmenu(id) {
+    const submenuId1 = document.getElementById(id).children[0];
+    
+    if (submenuId1.style.display === "flex" ) {
+      submenuId1.style.display = "none";
+    } 
+    else {
+      submenuId1.style.display = "flex";
+      submenuId1.style.flexDirection = "column";
+    }
+  }
+
+  function expandMenuMobile() {
+    const menu = document.getElementById("menu");
+    const menuMobile = document.querySelectorAll('#menuMobile>a>img');
+
+    if (menu.style.display === "flex") {
+      menuMobile[0].setAttribute('src', 'images/icon-hamburger.svg');
+      menu.style.display = "none";
+    } 
+    else {
+      menuMobile[0].setAttribute('src', 'images/icon-close.svg');
+      menu.style.display = "flex";
+      menu.style.flexDirection = "column";
     }
   }
 
@@ -245,6 +262,7 @@
   if(mobilecheck()){
     mobile();
   }
+
   
 </script>
 

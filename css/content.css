@@ -23,12 +23,12 @@
 
 .container-content article  section{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: column;
+    /* grid-template-columns: 1fr 1fr; */
     gap: 3rem;
 }
 
 .container-content .img-illustrator-editor{
-    /* height: 60vh; */
     overflow: hidden;
     width: 100%;
     display: flex;
@@ -189,12 +189,6 @@
         display: flex;
         flex-direction: column-reverse;
     }
-    /* .container-content .img-illustrator-editor{
-        height: 65vh;
-    } */
-    /* .container-content .img-illustrator-laptop-desktop{
-        height: 55vh;
-    } */
     .container-content .img-illustrator-editor > img {
         left: 0;
     }
@@ -227,9 +221,6 @@
         padding-bottom: 20px;
 
     }
-    /* .container-content article  {
-        gap: 0rem;
-    } */
     .container-content article:nth-child(2)  {
         height: 100%;
     }
