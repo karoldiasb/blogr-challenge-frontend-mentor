@@ -166,7 +166,7 @@ hr{
     transform: rotate(180deg);
 }
 
-@media only screen and (max-width: 376px) {
+@media only screen and (max-width: 415px) {
     header .container {
         width: 100%;
         display: flex;

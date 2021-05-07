@@ -1,13 +1,19 @@
+
+.designed-for-the-future{
+    display: flex;
+    justify-content: center;
+}
+
 .designed-for-the-future h1{
     text-align: center;
     position: relative;
-    top: 100px;
+    top: 20vh;
 }
 
 .container-content{
     display: flex;
     flex-direction: column;
-    gap: 5rem;
+    gap: 3rem;
 }
 
 .container-content article{
@@ -57,30 +63,30 @@
     align-self: center;
 }
 
-.container-content article:nth-child(2)  {
+.container-content article:nth-child(3)  {
     grid-template-rows: 300px;
 }
 
-.container-content article:nth-child(2)  section:first-child div{ 
+.container-content article:nth-child(3)  section:first-child div{ 
     margin: 0 80px; 
 }
 
-.container-content article:nth-child(2)  section p,
-.container-content article:nth-child(3)  section div p{
+.container-content article:nth-child(3)  section p,
+.container-content article:nth-child(4)  section div p{
     width: 70%;
 }
 
-.container-content article:first-child section{
+.container-content article:nth-child(2) section{
     display: flex;
     align-self: center;
 }
 
-.container-content article:first-child section:last-child{
+.container-content article:nth-child(2) section:last-child{
     position: relative;
-    top: -60px;
+    top: -15vh;
 }
 
-.container-content article:first-child  section:first-child div{
+.container-content article:nth-child(2)  section:first-child div{
     width: 80%;
     align-self: flex-end;
 }
@@ -90,8 +96,8 @@
     flex-direction: column;
 }
 
-.container-content article:nth-child(2){
-    border-radius: 0px 70px 0px 0px;
+.container-content article:nth-child(3){
+    border-radius: 0px 70px 0px 70px;
     background-color: hsl(237, 23%, 32%);
     background-image: url("../images/bg-pattern-circles.svg");
     background-repeat: no-repeat;
@@ -99,11 +105,13 @@
     background-position: left bottom;
 }
 
-.container-content article:nth-child(2) section{
+.container-content article:nth-child(3) section{
     display: flex;
     align-self: center;
     color: var(--white);
     padding: 20px;
+    width: 100%;
+    /* max-height: 100%; */
 }
 
 .container-content .illustration-phones{
@@ -133,12 +141,12 @@
 
 }
 
-.container-content article:nth-child(3) section{
+.container-content article:nth-child(4) section{
     display: flex;
     align-self: center;
 }
 
-.container-content article:nth-child(3) section div{
+.container-content article:nth-child(4) section div{
     align-self: flex-end;
 }
 
@@ -185,12 +193,12 @@
 }
 
 
-@media only screen and (max-width: 376px) {
+@media only screen and (max-width: 415px) {
     .designed-for-the-future h1 {
         position: unset;
         margin-top: 60px;
     }
-    .container-content article:first-child {
+    .container-content article:nth-child(2) {
         display: flex;
         flex-direction: column-reverse;
     }
@@ -201,10 +209,10 @@
         text-align: center; 
         font-size: 1.2rem;
     }
-    .container-content article:first-child section:last-child {
+    .container-content article:nth-child(2) section:last-child {
         position: unset;
     } 
-    .container-content article:first-child  section:first-child div {
+    .container-content article:nth-child(2)  section:first-child div {
         margin: 0px;
         text-align: center;
         padding-left: 20px;
@@ -219,23 +227,36 @@
     .container-content article  section{
         text-align: center;
     }
-    .container-content article:nth-child(2) section {
+    .container-content article:nth-child(3) section {
         padding-right: 0px;
     }
-    .container-content article:nth-child(2)  section p,
-        .container-content article:nth-child(3)  section div p {
+    .container-content article:nth-child(3)  section p,
+        .container-content article:nth-child(4)  section div p {
         width: 100%;
         padding-left: 20px;
         padding-right: 20px;
         padding-bottom: 20px;
     }
-    .container-content article:nth-child(2)  {
-        height: 100%;
-    }
-    .container-content article:nth-child(2)  section:first-child div {
-        margin: 0;
-    }
     .container-content article:nth-child(3)  {
+        margin-top: 25vh;
+        height: 500px;
+    }
+    .container-content article:nth-child(3)  section:first-child div {
+        margin: 0;
+        margin-bottom: 10vh;
+    }
+    .container-content .illustration-phones{
+        width: 100%;
+        position: relative;
+    }
+    .container-content .illustration-phones > img{
+        position: absolute;
+        top: -25vh;
+        left: 0;
+        width: 95%;
+        max-height: 350px;
+    }
+    .container-content article:nth-child(4)  {
         height: 100%;
     }
     .container-content .img-illustrator-laptop-desktop > img {

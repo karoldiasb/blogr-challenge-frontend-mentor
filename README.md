@@ -2,16 +2,19 @@
 
 ![Design preview for the Blogr landing page coding challenge](./design/desktop-preview.jpg)
 
-## Welcome! 👋
+What i used:
+- On file "index.html" only HTML, CSS and JavaScript;
+- On file "indexVue.html" HTML, CSS and the framework VueJS.
 
-Desenvolvimento da página utilizando HTML, CSS e JavaScript puro.
+Link for the application on vercel:  
 
-Telas do desenvolvimento do challenge:
-- Desktop:
-![image](./images/desktop.png)  
--Menu desktop:
-![image](./images/header.png)  
-- Mobile:  
-![image](./images/mobile.png)  
--Menu mobile:
-![image](images/header-mobile.png)
+
+Screenshots of challenge finished:
+- Desktop:  
+[<img src="./images/finished/desktop.png" width="200"/>](./images/finished/desktop.png)  
+-Menu desktop:  
+[<img src="./images/finished/header.png" width="200"/>](./images/finished/header.png)  
+- Mobile:   
+[<img src="./images/finished/mobile.png" width="100"/>](./images/finished/mobile.png)  
+-Menu mobile:  
+[<img src="./images/finished/header-mobile.png" width="100"/>](images/finished/header-mobile.png)

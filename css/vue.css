@@ -1,0 +1,63 @@
+header .container .hideMenuMobile {
+    display: none;
+}
+
+header .container .showMenuMobile {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    position: fixed;
+    top: 60px;
+    width: 85%;
+    min-height: 50%;
+    height: auto;
+    z-index:1;
+    background-color: var(--white);
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.24);
+    padding: 20px;
+}
+
+header .container .showMenuMobile {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .showMenuCompany {
+    margin: 10px;
+}
+
+header .showMenuCompany li {
+    position: relative;
+}
+
+header nav .showMenuCompany li {
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+
+header nav .showMenuCompany li a{
+    color: var(--very-dark-black-blue);
+    text-decoration: none;
+}
+
+header .container .hideSubmenuMobile {
+    display: none;
+}
+
+header .container .showSubmenuMobile{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-width: 230px;
+    background-color: rgb(235, 235, 235);
+    z-index:1;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+    box-shadow: none;
+}
