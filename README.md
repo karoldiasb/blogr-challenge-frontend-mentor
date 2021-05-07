@@ -13,7 +13,7 @@ https://blogr-challenge-frontend-mentor.vercel.app/
 Screenshots of challenge finished:
 - Desktop:  
 [<img src="./images/finished/desktop.png" width="200"/>](./images/finished/desktop.png)  
--Menu desktop:  
+- Menu desktop:  
 [<img src="./images/finished/header.png" width="200"/>](./images/finished/header.png)  
 - Mobile:   
 [<img src="./images/finished/mobile.png" width="100"/>](./images/finished/mobile.png)  
