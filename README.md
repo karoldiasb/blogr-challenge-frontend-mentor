@@ -7,7 +7,7 @@ What i used:
 - On file "indexVue.html" HTML, CSS and the framework VueJS.
 
 Link for the application on vercel:  
-
+https://blogr-challenge-frontend-mentor.vercel.app/
 
 Screenshots of challenge finished:
 - Desktop:  
