@@ -5,6 +5,7 @@
 What i used:
 - On file "index.html" only HTML, CSS and JavaScript;
 - On file "indexVue.html" HTML, CSS and the framework VueJS.
+- Also i used concepts of flexbox and grid layout 
 
 Link for the application on vercel:  
 https://blogr-challenge-frontend-mentor.vercel.app/
